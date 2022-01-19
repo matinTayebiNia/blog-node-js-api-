@@ -20,7 +20,8 @@ database\seeds\permissions.json
 database\seeds\roles.json
 ```
 
-##users
+## users
+
 After importing data in mongodb, two users will be created , one admin and one normal user
 
 ```json
