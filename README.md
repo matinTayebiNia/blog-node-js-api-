@@ -14,6 +14,7 @@ npm install
 
 befor using app plz import the json file in mongodb database
 
+Json files in:
 ```
 database\seeds\users.json
 database\seeds\permissions.json
