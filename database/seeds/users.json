@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "61e3fdd0a763d02ad8c54cf6"
+  },
+  "name": "matinTayebi",
+  "admin": true,
+  "email": "admin@gmail.com",
+  "password": "$2a$15$GQBdj6gxSkC7KwiW9RudQecZUf4K5fwNpNrCepS3roT2VIxj9ifR6",
+  "createdAt": {
+    "$date": "2022-01-16T11:13:20.204Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-18T17:29:31.673Z"
+  },
+  "__v": 9,
+  "roles": [
+    {
+      "$oid": "61e603d9585cb137d1d621fd"
+    },
+    {
+      "$oid": "61e589617dc601824d140150"
+    },
+    {
+      "$oid": "61e583217dc601824d140131"
+    },
+    {
+      "$oid": "61e581d57dc601824d14010c"
+    },
+    {
+      "$oid": "61e57fbe7dc601824d1400df"
+    },
+    {
+      "$oid": "61e57df78ef478ec768cd601"
+    },
+    {
+      "$oid": "61e6fe03ba752c0b0a9f49b7"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "61e825ca24071ce8b6b78711"
+  },
+  "name": "normalUser",
+  "admin": false,
+  "email": "normaluser@gmail.com",
+  "password": "$2b$15$U/edtWVFV5C5eBmNadGnY.B1krynyG3TNY/D1WH.UEpEOl1met7HO",
+  "roles": [],
+  "createdAt": {
+    "$date": "2022-01-19T14:52:58.531Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-19T14:52:58.531Z"
+  },
+  "__v": 0
+}]

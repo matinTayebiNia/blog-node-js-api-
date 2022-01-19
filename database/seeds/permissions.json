@@ -1,0 +1,326 @@
+[{
+  "_id": {
+    "$oid": "61e560de1e7fd968f25a6c31"
+  },
+  "name": "update-article",
+  "label": "ویرایش مقاله",
+  "createdAt": {
+    "$date": "2022-01-17T12:28:14.269Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T12:28:14.269Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e560ee1e7fd968f25a6c35"
+  },
+  "name": "show-article",
+  "label": "نمایش  مقاله",
+  "createdAt": {
+    "$date": "2022-01-17T12:28:30.971Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T12:31:08.476Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e560fa1e7fd968f25a6c39"
+  },
+  "name": "destroy-article",
+  "label": "حذف  مقاله",
+  "createdAt": {
+    "$date": "2022-01-17T12:28:42.168Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T12:30:20.327Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e57d128ef478ec768cd5ea"
+  },
+  "name": "show-category",
+  "label": "نمایش دسته بندی ها",
+  "createdAt": {
+    "$date": "2022-01-17T14:28:34.910Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:28:34.910Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e57d268ef478ec768cd5ee"
+  },
+  "name": "update-category",
+  "label": "ویرایش دسته بندی ها",
+  "createdAt": {
+    "$date": "2022-01-17T14:28:54.946Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:28:54.946Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e57d418ef478ec768cd5f2"
+  },
+  "name": "destroy-category",
+  "label": "حذف دسته بندی ها",
+  "createdAt": {
+    "$date": "2022-01-17T14:29:21.181Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:29:21.181Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e57d638ef478ec768cd5f6"
+  },
+  "name": "create-category",
+  "label": "ساختن دسته بندی ها",
+  "createdAt": {
+    "$date": "2022-01-17T14:29:55.047Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:29:55.047Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e57f5a7dc601824d1400cd"
+  },
+  "name": "create-permission",
+  "label": "ساختن دسترسی",
+  "createdAt": {
+    "$date": "2022-01-17T14:38:18.075Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:38:18.075Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e57f717dc601824d1400d3"
+  },
+  "name": "update-permission",
+  "label": "ویرایش دسترسی",
+  "createdAt": {
+    "$date": "2022-01-17T14:38:41.711Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:38:41.711Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e57f7d7dc601824d1400d7"
+  },
+  "name": "show-permission",
+  "label": "نمایش دسترسی",
+  "createdAt": {
+    "$date": "2022-01-17T14:38:53.994Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:38:53.994Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e57f8b7dc601824d1400db"
+  },
+  "name": "destroy-permission",
+  "label": "حذف دسترسی",
+  "createdAt": {
+    "$date": "2022-01-17T14:39:07.754Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:39:07.754Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e580ca7dc601824d1400f4"
+  },
+  "name": "destroy-role",
+  "label": "حذف مقام",
+  "createdAt": {
+    "$date": "2022-01-17T14:44:26.391Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:44:26.391Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e580da7dc601824d1400f8"
+  },
+  "name": "show-role",
+  "label": "نمایش مقامم",
+  "createdAt": {
+    "$date": "2022-01-17T14:44:42.676Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:44:42.676Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e580ec7dc601824d1400fc"
+  },
+  "name": "create-role",
+  "label": "ساختن مقامم",
+  "createdAt": {
+    "$date": "2022-01-17T14:45:00.244Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:45:00.244Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e580fb7dc601824d140100"
+  },
+  "name": "update-role",
+  "label": "ویرایش مقامم",
+  "createdAt": {
+    "$date": "2022-01-17T14:45:15.145Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:45:15.145Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e582b57dc601824d140125"
+  },
+  "name": "update-comment",
+  "label": "تایید کامنت",
+  "createdAt": {
+    "$date": "2022-01-17T14:52:37.205Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:52:37.205Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e582d17dc601824d140129"
+  },
+  "name": "approved-comment",
+  "label": "نمایش کامنت های تایید شده",
+  "createdAt": {
+    "$date": "2022-01-17T14:53:05.716Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:53:05.716Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e582e47dc601824d14012d"
+  },
+  "name": "unapproved-comment",
+  "label": "نمایش کامنت های تایید نشده",
+  "createdAt": {
+    "$date": "2022-01-17T14:53:24.026Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:53:24.026Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e588bd7dc601824d140140"
+  },
+  "name": "show-user",
+  "label": "نمایش کاربران",
+  "createdAt": {
+    "$date": "2022-01-17T15:18:21.327Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T15:18:21.327Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e588d67dc601824d140144"
+  },
+  "name": "create-user",
+  "label": "ایجادکاربر جدید",
+  "createdAt": {
+    "$date": "2022-01-17T15:18:46.333Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T15:18:46.333Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e588f37dc601824d140148"
+  },
+  "name": "update-user",
+  "label": "ویرایش کاربر ",
+  "createdAt": {
+    "$date": "2022-01-17T15:19:15.906Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T15:19:15.906Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e589137dc601824d14014c"
+  },
+  "name": "addRole-user",
+  "label": "دادن مقام به کاربر ",
+  "createdAt": {
+    "$date": "2022-01-17T15:19:47.855Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T15:19:47.855Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e591848be3389c511c1a39"
+  },
+  "name": "delete-comment",
+  "label": "حذف کامنت",
+  "createdAt": {
+    "$date": "2022-01-17T15:55:48.232Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T15:55:48.232Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e603a5585cb137d1d621f9"
+  },
+  "name": "show-like",
+  "label": "نمایش لایک ها",
+  "createdAt": {
+    "$date": "2022-01-18T00:02:45.843Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-18T00:02:45.843Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e6fbf3ba752c0b0a9f49b2"
+  },
+  "name": "create-article",
+  "label": "ساختن مقاله",
+  "createdAt": {
+    "$date": "2022-01-18T17:42:11.945Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-18T17:42:11.945Z"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,181 @@
+[{
+  "_id": {
+    "$oid": "61e57df78ef478ec768cd601"
+  },
+  "name": "manege-categories",
+  "label": "بخش دسته بندی ها",
+  "permissions": [
+    {
+      "$oid": "61e57d638ef478ec768cd5f6"
+    },
+    {
+      "$oid": "61e57d418ef478ec768cd5f2"
+    },
+    {
+      "$oid": "61e57d268ef478ec768cd5ee"
+    },
+    {
+      "$oid": "61e57d128ef478ec768cd5ea"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-17T14:32:23.977Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:32:23.977Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e57fbe7dc601824d1400df"
+  },
+  "name": "manege-role",
+  "label": "بخش مقام ها",
+  "permissions": [
+    {
+      "$oid": "61e580ca7dc601824d1400f4"
+    },
+    {
+      "$oid": "61e580da7dc601824d1400f8"
+    },
+    {
+      "$oid": "61e580ec7dc601824d1400fc"
+    },
+    {
+      "$oid": "61e580fb7dc601824d140100"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-17T14:39:58.715Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:46:50.986Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e581d57dc601824d14010c"
+  },
+  "name": "manege-permission",
+  "label": "بخش دسترسی ها",
+  "permissions": [
+    {
+      "$oid": "61e57f5a7dc601824d1400cd"
+    },
+    {
+      "$oid": "61e57f717dc601824d1400d3"
+    },
+    {
+      "$oid": "61e57f7d7dc601824d1400d7"
+    },
+    {
+      "$oid": "61e57f8b7dc601824d1400db"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-17T14:48:53.218Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T14:48:53.218Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e583217dc601824d140131"
+  },
+  "name": "manege-comment",
+  "label": "بخش کامنت ها",
+  "permissions": [
+    {
+      "$oid": "61e582b57dc601824d140125"
+    },
+    {
+      "$oid": "61e582d17dc601824d140129"
+    },
+    {
+      "$oid": "61e582e47dc601824d14012d"
+    },
+    {
+      "$oid": "61e591848be3389c511c1a39"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-17T14:54:25.158Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T15:58:26.766Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e589617dc601824d140150"
+  },
+  "name": "manege-user",
+  "label": "بخش کاربران",
+  "permissions": [
+    {
+      "$oid": "61e588bd7dc601824d140140"
+    },
+    {
+      "$oid": "61e588d67dc601824d140144"
+    },
+    {
+      "$oid": "61e588f37dc601824d140148"
+    },
+    {
+      "$oid": "61e589137dc601824d14014c"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-17T15:21:05.379Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-17T15:21:05.379Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e603d9585cb137d1d621fd"
+  },
+  "name": "manege-likes",
+  "label": "بخش لایک ها",
+  "permissions": [
+    {
+      "$oid": "61e603a5585cb137d1d621f9"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-18T00:03:37.329Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-18T00:03:37.329Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61e6fe03ba752c0b0a9f49b7"
+  },
+  "name": "manege-article",
+  "label": "بخش مقالات ",
+  "permissions": [
+    {
+      "$oid": "61e560de1e7fd968f25a6c31"
+    },
+    {
+      "$oid": "61e560ee1e7fd968f25a6c35"
+    },
+    {
+      "$oid": "61e560fa1e7fd968f25a6c39"
+    },
+    {
+      "$oid": "61e6fbf3ba752c0b0a9f49b2"
+    }
+  ],
+  "createdAt": {
+    "$date": "2022-01-18T17:50:59.300Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-18T17:50:59.300Z"
+  },
+  "__v": 0
+}]
