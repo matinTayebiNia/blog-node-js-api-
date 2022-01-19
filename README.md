@@ -12,7 +12,7 @@ npm install
 
 ## Usage
 
-after using app plz import the json file in mongodb database
+befor using app plz import the json file in mongodb database
 
 ```
 database\seeds\users.json
