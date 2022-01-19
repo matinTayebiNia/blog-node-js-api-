@@ -1,0 +1,1884 @@
+{
+	"info": {
+		"_postman_id": "83880027-936a-44c9-aaaf-3d4381c9fba6",
+		"name": "blog-api-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "adminApi",
+			"item": [
+				{
+					"name": "articleApi",
+					"item": [
+						{
+							"name": "allArticle",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/article",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"article"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create-article",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "images",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "body",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "tags",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "categories[]",
+											"value": "",
+											"contentType": "application/json",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/article/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"article",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create-article",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "this is title",
+													"type": "text"
+												},
+												{
+													"key": "images",
+													"type": "file",
+													"src": []
+												},
+												{
+													"key": "body",
+													"value": "bodybodybodybodybodybody bla bla",
+													"type": "text"
+												},
+												{
+													"key": "tags",
+													"value": "seo,title",
+													"type": "text"
+												},
+												{
+													"key": "categories[]",
+													"value": "{{categories}}",
+													"contentType": "application/json",
+													"type": "text"
+												}
+											],
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/admin/article/create",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"article",
+												"create"
+											],
+											"query": [
+												{
+													"key": "title",
+													"value": null,
+													"disabled": true
+												},
+												{
+													"key": "images",
+													"value": null,
+													"disabled": true
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "update-article",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "images",
+											"type": "file",
+											"src": []
+										},
+										{
+											"key": "body",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "tags",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "categories[]",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/article/update/:id?_method=put",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"article",
+										"update",
+										":id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "put"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "article_id",
+											"description": "put here id of article"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update-article",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "title",
+													"value": "",
+													"type": "text"
+												},
+												{
+													"key": "images",
+													"type": "file",
+													"src": []
+												},
+												{
+													"key": "body",
+													"value": "",
+													"type": "text"
+												},
+												{
+													"key": "tags",
+													"value": "",
+													"type": "text"
+												},
+												{
+													"key": "categories[]",
+													"value": "",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/admin/article/update/{{articleID}}?_method=put",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"article",
+												"update",
+												"{{articleID}}"
+											],
+											"query": [
+												{
+													"key": "_method",
+													"value": "put"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "delete-article",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/article/delete/:article_id?_method=delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"article",
+										"delete",
+										":article_id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "delete"
+										}
+									],
+									"variable": [
+										{
+											"key": "article_id",
+											"value": "article_id",
+											"description": "put here id of article"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "permissionApi",
+					"item": [
+						{
+							"name": "allPermission",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/permissions",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"permissions"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create-permission",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"create-article\",\r\n    \"label\":\"ساختن مقاله\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/permissions/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"permissions",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create-permission",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"testPermission\",\r\n    \"label\":\"تستی دسترسی\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/admin/permissions/create",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"permissions",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "update-permission",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/permissions/update/:id?_method=put",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"permissions",
+										"update",
+										":id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "put"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "permission_id",
+											"description": "put here id of permission"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update-permission",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"create-article\",\r\n    \"label\":\"ویرایش درسترسی \"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/admin/permissions/update/{{permissionID}}?_method=put",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"permissions",
+												"update",
+												"{{permissionID}}"
+											],
+											"query": [
+												{
+													"key": "_method",
+													"value": "put"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "delete-permission",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/permissions/delete/:id?_method=delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"permissions",
+										"delete",
+										":id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "delete"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "permission_id",
+											"description": "put here id of permission"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "categoryApi",
+					"item": [
+						{
+							"name": "allCategories",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/categories",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"categories"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create-category",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/categories/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"categories",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create-category",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"لب تاپ\",\r\n    \"parent\":\"{{category_id}} or null\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/admin/categories/create",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"categories",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "update-category",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/categories/update/:id?_method=put",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"categories",
+										"update",
+										":id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "put"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "category_id",
+											"description": "put here id of category"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update-category",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"کامپیوتر\",\r\n    \"parent\":\"this can be null or add another id category\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/admin/categories/update/{{category_id}}",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"categories",
+												"update",
+												"{{category_id}}"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "delete-category",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/categories/delete/:id?_method=delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"categories",
+										"delete",
+										":id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "delete"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "category_id",
+											"description": "put here id of category"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "rolesApi",
+					"item": [
+						{
+							"name": "AllRoles",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/roles",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"roles"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create-role",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/role/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"role",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create-role",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"manege-product\",\r\n    \"label\":\"این یک تسته \",\r\n    \"permissions\":[\r\n        \"{{permissionID}}\",\r\n        \"در اینجا میتوانید چندین دسترسی وارد کنید\"\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/admin/role/create",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"role",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "update-role",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/roles/update/:id?_method=put",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"roles",
+										"update",
+										":id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "put"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "role_id",
+											"description": "put here id of role"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update-role",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"manege-articles\",\r\n    \"label\":\"ویرایش مقام\",\r\n    \"permissions\":[\r\n        \"61e560fa1e7fd968f25a6c39\",\r\n        \"61e560ee1e7fd968f25a6c35\",\r\n        \"61e560de1e7fd968f25a6c31\",\r\n        \"61e560c91e7fd968f25a6c2d\"\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/admin/roles/update/{{roleID}}?_method=put",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"roles",
+												"update",
+												"{{roleID}}"
+											],
+											"query": [
+												{
+													"key": "_method",
+													"value": "put"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "delete-role",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/roles/delete/:id?_method=delete",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"roles",
+										"delete",
+										":id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "delete"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "role_id",
+											"description": "put here id of role"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "commentApi",
+					"item": [
+						{
+							"name": "show-approved-comment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/comment/approved",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"comment",
+										"approved"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "show-unapproved-comment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/comment/unapproved",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"comment",
+										"unapproved"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "approve-comment",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/comment/update/:id?_method=put",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"comment",
+										"update",
+										":id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "put"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "comment_id",
+											"description": "put here id of comment"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete-comment",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/comment/delete/:id?_method=put",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"comment",
+										"delete",
+										":id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "put"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "comment_id",
+											"description": "put here id of comment"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "userApi",
+					"item": [
+						{
+							"name": "AllUsers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create-user",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/users/create",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"users",
+										"create"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "create-user",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"fullName\":\"admin123\",\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"ali123E\",\r\n    \"confirmPassword\":\"ali123E\",\r\n    \"admin\":\"This variable is optional.If the value is true, the user becomes an admin\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/admin/users/create",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"users",
+												"create"
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "update-user",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/users/update/:id?_method=put",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"users",
+										"update",
+										":id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "put"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "user_id",
+											"description": "put here id of user"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "update-user",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\":\"matintayebinia\",\r\n    \"email\":\"matintayebinia@gmail.com\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/admin/users/update/{{userID}}?_method=put",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"users",
+												"update",
+												"{{userID}}"
+											],
+											"query": [
+												{
+													"key": "_method",
+													"value": "put"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						},
+						{
+							"name": "addRole-user",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/users/add-roles/:id?_method=put",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"users",
+										"add-roles",
+										":id"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "put"
+										}
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "user_id",
+											"description": "put here id of user"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "addRole-user",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"roles\":[\r\n        \"{{roleID}}\"\r\n    ]\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/admin/users/add-roles/{{userID}}?_method=put",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"admin",
+												"users",
+												"add-roles",
+												"{{userID}}"
+											],
+											"query": [
+												{
+													"key": "_method",
+													"value": "put"
+												}
+											]
+										}
+									},
+									"_postman_previewlanguage": null,
+									"header": null,
+									"cookie": [],
+									"body": null
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "likesApi",
+					"item": [
+						{
+							"name": "AllLikes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/admin/likes",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"admin",
+										"likes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "authApi",
+			"item": [
+				{
+					"name": "register-auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fullName\":\"user123\",\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"user123E\",\r\n    \"confirmPassword\":\"user123E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login-auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"matintayebinia@gmail.com\",\r\n    \"password\":\"admin123E\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgotPassword-auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"matintayebinia@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/forgot-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "resetPassword-auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/auth/reset-password/:token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"reset-password",
+								":token"
+							],
+							"variable": [
+								{
+									"key": "token",
+									"value": "token",
+									"description": "Enter the token you received from the email here"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "resetPassword-auth",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"matintayebinia@gmail.com\",\r\n    \"password\":\"secret123R\",\r\n    \"confirmPassword\":\"secret123R\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/auth/reset-password/:token",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"auth",
+										"reset-password",
+										":token"
+									],
+									"variable": [
+										{
+											"key": "token",
+											"value": "782003ffee3483698a822c098fafb53c"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "homeApi",
+			"item": [
+				{
+					"name": "articles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single-article",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/articles/:slug",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"articles",
+								":slug"
+							],
+							"variable": [
+								{
+									"key": "slug",
+									"value": "slug",
+									"description": "put slug article here"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCommentOfArticle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/comments/articles/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"comments",
+								"articles",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "article_id",
+									"description": "put id of article here"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getArticleFromCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/categories/:slug",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"categories",
+								":slug"
+							],
+							"variable": [
+								{
+									"key": "slug",
+									"value": "put here slug category"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "userApi",
+			"item": [
+				{
+					"name": "likeArticle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/like/article/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"like",
+								"article",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "article_id",
+									"description": "put id of article here"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add-comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\":\"this is comment\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/v1/user/add-comment/article/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"add-comment",
+								"article",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "article_id",
+									"description": "put id of article here"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxZTNmZGQwYTc2M2QwMmFkOGM1NGNmNiIsImlhdCI6MTY0MjYwNDI5MCwiZXhwIjoxNjQyNjkwNjkwfQ.L5JnhYS8urY6yaID8paM3a2VGc8_86fq_4_4lBVCi88",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "authentication",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "categories",
+			"value": "61e526a7fb40293dd6d6f399"
+		},
+		{
+			"key": "articleID",
+			"value": "this is title"
+		},
+		{
+			"key": "article",
+			"value": "61e6abd662a098eece6b3e04"
+		},
+		{
+			"key": "permissionID",
+			"value": "61e560c91e7fd968f25a6c2d"
+		},
+		{
+			"key": "category_id",
+			"value": "61e526a7fb40293dd6d6f399"
+		},
+		{
+			"key": "roleID",
+			"value": "61e56543afb1fb495bec53b1"
+		},
+		{
+			"key": "commentID",
+			"value": "61e60e53bcc342c78470b989"
+		},
+		{
+			"key": "userID",
+			"value": "61e3fdd0a763d02ad8c54cf6"
+		}
+	]
+}
