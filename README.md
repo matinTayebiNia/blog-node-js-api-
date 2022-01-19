@@ -37,3 +37,7 @@ After importing data in mongodb, two users will be created , one admin and one n
      }
 ]
 ```
+
+## api documentation with swagger
+
+run the app and go to (/api-dov)[http://localhost:3000/api-doc]
